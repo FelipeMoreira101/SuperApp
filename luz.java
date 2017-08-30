@@ -4,10 +4,6 @@ public class luz{
     String cor = "rosa";
     Integer Ligado = 0;
 
-    public String GetCor(){
-        return cor;
-    }
-
     public void MudarCor(String cor2){
         this.cor = cor2;
     }

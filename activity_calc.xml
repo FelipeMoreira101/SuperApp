@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_calc"
+    tools:context="com.example.felipe.superapp.calc">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="@string/titulo"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNum1"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNum2"
+        />
+    <!--              SOMAR         -->
+    <Button
+        android:id="@+id/soma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Somar"
+        android:onClick="Soma"
+        />
+    <!--             DIMINUIR           -->
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtrair"
+        android:onClick="Subt"
+        />
+    <!--               MULTIPLICAR           -->
+    <Button
+        android:id="@+id/mult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplicar"
+        android:onClick="Mult"
+        />
+    <!--                      DIVIDIR           -->
+    <Button
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dividir"
+        android:onClick="Div"
+        />
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text=""
+        />
+</LinearLayout>
